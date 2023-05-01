@@ -1,0 +1,107 @@
+/* Set the initial style of all pages */
+.page {
+	display: none;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* Set specific styles for the first page */
+#page1 {
+	display: block;
+}
+
+/* set the style of all buttons */
+button {
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: rgb(21, 117, 58);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Set the style of the button when hovering */
+button:hover {
+	background-color: #3e8e41;
+}
+
+
+/* Add a gradient background to the <body> element */
+body {
+	background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 800% 800%;
+	animation: Gradient 15s ease infinite;
+  }
+  
+  /* Create a gradient animation */
+  @keyframes Gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
+/* side navigation bar style */
+.sidebar {
+	position: fixed; /* Fix the navigation bar on the page */
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 200px; /* Set the width of the navigation bar */
+	background-color: #333; 
+	color: #fff; 
+  
+  .sidebar ul {
+	list-style: none; /* remove list styles */
+	padding: 0;
+	margin: 0;
+  }
+  
+  .sidebar li {
+	padding: 10px; /* Set the padding of the list item */
+  }
+  
+  .sidebar a {
+	display: block; /* Set the link as a block-level element so that it takes up the entire list item space */
+	color: #fff;
+	text-decoration: none; /* remove underscore */
+  }
+  
+  .sidebar a:hover {
+	background-color: #fff; 
+	color: #333; 
+  }
+  
+ /* main content area style */
+  main {
+	margin-left: 200px; 
+  }
+  
+  section {
+	padding: 50px; 
+  }
+  
+  #my-image {
+    float: left;
+    margin-left: -1000px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+  .clock {
+    display: flex;
+  }
+  
+  

@@ -1,0 +1,94 @@
+/* 设置所有页面的初始样式 */
+.page {
+	display: none;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* 设置第一个页面的特定样式 */
+#page1 {
+	display: block;
+}
+
+/* 设置所有按钮的样式 */
+button {
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: rgb(21, 117, 58);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* 设置按钮悬停时的样式 */
+button:hover {
+	background-color: #3e8e41;
+}
+
+
+/* 为 <body> 元素添加一个渐变背景 */
+body {
+	background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 800% 800%;
+	animation: Gradient 15s ease infinite;
+  }
+  
+  /* 创建一个渐变动画 */
+  @keyframes Gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
+/* 侧边导航栏样式 */
+.sidebar {
+	position: fixed; /* 将导航栏固定在页面上 */
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 200px; /* 设置导航栏宽度 */
+	background-color: #333; /* 设置导航栏背景颜色 */
+	color: #fff; /* 设置导航栏文字颜色 */
+  }
+  
+  .sidebar ul {
+	list-style: none; /* 去除列表样式 */
+	padding: 0;
+	margin: 0;
+  }
+  
+  .sidebar li {
+	padding: 10px; /* 设置列表项内边距 */
+  }
+  
+  .sidebar a {
+	display: block; /* 将链接设置为块级元素，使其占据整个列表项空间 */
+	color: #fff;
+	text-decoration: none; /* 去除下划线 */
+  }
+  
+  .sidebar a:hover {
+	background-color: #fff; /* 鼠标悬停时，设置链接背景颜色 */
+	color: #333; /* 设置链接文字颜色 */
+  }
+  
+  /* 主要内容区域样式 */
+  main {
+	margin-left: 200px; /* 设置主要内容区域的左边距，使其不被导航栏遮盖 */
+  }
+  
+  section {
+	padding: 50px; /* 设置各个 section 的内边距 */
+  }
+  
+  #my-image {
+    float: left;
+    margin-left: -1000px;
+}
